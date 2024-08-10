@@ -362,16 +362,16 @@
   letter-spacing: normal;
   position: relative;
 }
-.aximo-header1 .site-menu-main .nav-link-item {
+.buildcode-header1 .site-menu-main .nav-link-item {
   color: var(--white-smoke);
 }
-.aximo-header2 .site-menu-main .nav-link-item {
+.buildcode-header2 .site-menu-main .nav-link-item {
   color: var(--heading-color2);
 }
-.aximo-header4 .site-menu-main .nav-link-item {
+.buildcode-header4 .site-menu-main .nav-link-item {
   color: var(--heading-color3);
 }
-.aximo-header5 .site-menu-main .nav-link-item {
+.buildcode-header5 .site-menu-main .nav-link-item {
   color: var(--light-color4);
 }
 

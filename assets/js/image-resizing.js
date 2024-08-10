@@ -1,4 +1,4 @@
-const wrappers = document.querySelectorAll(".aximo-image-resizing-item");
+const wrappers = document.querySelectorAll(".buildcode-image-resizing-item");
 const wrapArray = Array.from(wrappers);
 
 wrapArray.forEach(item => {

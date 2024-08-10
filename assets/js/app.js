@@ -9,19 +9,19 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 
   /*------------------------------------------------------------------
   [Table of contents]
-  AXIMO PRELOADER JS INIT
-  AXIMO SKILLBAR JS INIT
-  AXIMO MENU SIDEBAR JS INIT
-  AXIMO COUNTER JS INIT
-  AXIMO IMAGE ROTATE JS INIT
-  AXIMO AUTO SLIDER JS INIT
-  AXIMO PROJECT SLIDER JS INIT
-  AXIMO PROJECT SLIDER2 JS INIT
-  AXIMO MAGNIFIC POPUP JS INIT
-  AXIMO IMAGE SWIPE HOVER JS INIT
-  AXIMO PRICING TABLE JS INIT
-  AXIMO MAP JS
-  AXIMO wow js
+  buildcode PRELOADER JS INIT
+  buildcode SKILLBAR JS INIT
+  buildcode MENU SIDEBAR JS INIT
+  buildcode COUNTER JS INIT
+  buildcode IMAGE ROTATE JS INIT
+  buildcode AUTO SLIDER JS INIT
+  buildcode PROJECT SLIDER JS INIT
+  buildcode PROJECT SLIDER2 JS INIT
+  buildcode MAGNIFIC POPUP JS INIT
+  buildcode IMAGE SWIPE HOVER JS INIT
+  buildcode PRICING TABLE JS INIT
+  buildcode MAP JS
+  buildcode wow js
   
   -------------------------------------------------------------------*/
 
@@ -35,15 +35,15 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
   $(function () {
     var _Swiper;
     /*--------------------------------------------------------------
-    AXIMO PRELOADER JS INIT
+    buildcode PRELOADER JS INIT
     --------------------------------------------------------------*/
 
-    $(".aximo-preloader-wrap").fadeOut(500);
+    $(".buildcode-preloader-wrap").fadeOut(500);
 
     /*--------------------------------------------------------------
-    AXIMO SKILLBAR JS INIT
+    buildcode SKILLBAR JS INIT
     ------------------------------------------------------------*/
-    var skillbar = $('.aximo-skillbar');
+    var skillbar = $('.buildcode-skillbar');
     if (skillbar.is_exist()) {
       skillbar.skillBars({
         from: 0,
@@ -54,7 +54,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
     }
 
     /*--------------------------------------------------------------
-    AXIMO STICKY MENU JS INIT
+    buildcode STICKY MENU JS INIT
     --------------------------------------------------------------*/
     $(window).on('scroll', function () {
       if ($(window).scrollTop() > 50) {
@@ -65,26 +65,26 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
     });
 
     /*--------------------------------------------------------------
-    AXIMO MENU SIDEBAR JS INIT
+    buildcode MENU SIDEBAR JS INIT
     --------------------------------------------------------------*/
     $(".barger-menu").on("click", function (e) {
-      $(".aximo-sidemenu-column, .offcanvas-overlay").addClass("active");
+      $(".buildcode-sidemenu-column, .offcanvas-overlay").addClass("active");
       event.preventDefault(e);
     });
-    $(".aximo-sidemenu-close, .offcanvas-overlay").on("click", function () {
-      $(".aximo-sidemenu-column, .offcanvas-overlay").removeClass("active");
+    $(".buildcode-sidemenu-close, .offcanvas-overlay").on("click", function () {
+      $(".buildcode-sidemenu-column, .offcanvas-overlay").removeClass("active");
     });
 
     /*--------------------------------------------------------------
-    AXIMO COUNTER JS INIT
+    buildcode COUNTER JS INIT
     --------------------------------------------------------------*/
-    var aximo_counter = $('#aximo-counter');
-    if (aximo_counter.is_exist()) {
+    var buildcode_counter = $('#buildcode-counter');
+    if (buildcode_counter.is_exist()) {
       var a = 0;
       $(window).scroll(function () {
-        var oTop = $(aximo_counter).offset().top - window.innerHeight;
+        var oTop = $(buildcode_counter).offset().top - window.innerHeight;
         if (a == 0 && $(window).scrollTop() > oTop) {
-          $('.aximo-counter').each(function () {
+          $('.buildcode-counter').each(function () {
             var $this = $(this),
               countTo = $this.attr('data-percentage');
             $({
@@ -108,7 +108,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
     }
 
     /*--------------------------------------------------------------
-    AXIMO IMAGE ROTATE JS INIT
+    buildcode IMAGE ROTATE JS INIT
     ------------------------------------------------------------*/
 
     var $rotateTwo = $('#rotatetwo');
@@ -119,9 +119,9 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
     });
 
     /*--------------------------------------------------------------
-    AXIMO AUTO SLIDER JS INIT
+    buildcode AUTO SLIDER JS INIT
     ------------------------------------------------------------*/
-    var auto_slider = new Swiper('.aximo-auto-slider', {
+    var auto_slider = new Swiper('.buildcode-auto-slider', {
       centeredSlides: true,
       speed: 6000,
       autoplay: {
@@ -134,9 +134,9 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
     });
 
     /*--------------------------------------------------------------
-    AXIMO PROJECT SLIDER JS INIT
+    buildcode PROJECT SLIDER JS INIT
     ------------------------------------------------------------*/
-    var aximo_project_slider = new Swiper(".aximo-project-slider", (_Swiper = {
+    var buildcode_project_slider = new Swiper(".buildcode-project-slider", (_Swiper = {
       // Optional parameters
       spaceBetween: 24,
       direction: 'horizontal',
@@ -160,9 +160,9 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
     }), _Swiper));
 
     /*--------------------------------------------------------------
-    AXIMO PROJECT SLIDER2 JS INIT
+    buildcode PROJECT SLIDER2 JS INIT
     ------------------------------------------------------------*/
-    var aximo_project_slider2 = new Swiper(".aximo-project-slider2", {
+    var buildcode_project_slider2 = new Swiper(".buildcode-project-slider2", {
       // Optional parameters
       spaceBetween: 24,
       scrollbar: {
@@ -185,9 +185,9 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
     });
 
     /*--------------------------------------------------------------
-    AXIMO PROJECT SLIDER JS INIT
+    buildcode PROJECT SLIDER JS INIT
     ------------------------------------------------------------*/
-    var aximo_instagram_slider = new Swiper(".aximo-instagram-slider", {
+    var buildcode_instagram_slider = new Swiper(".buildcode-instagram-slider", {
       loop: true,
       // Responsive breakpoints
       breakpoints: {
@@ -210,9 +210,9 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
     });
 
     /*--------------------------------------------------------------
-    AXIMO PROJECT SLIDER JS INIT
+    buildcode PROJECT SLIDER JS INIT
     ------------------------------------------------------------*/
-    var aximo_resizingslider = new Swiper(".aximo-image-resizing", {
+    var buildcode_resizingslider = new Swiper(".buildcode-image-resizing", {
       loop: true,
       // Responsive breakpoints
       breakpoints: {
@@ -235,9 +235,9 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
     });
 
     /*--------------------------------------------------------------
-    AXIMO TESTIMONIAL SLIDER JS INIT
+    buildcode TESTIMONIAL SLIDER JS INIT
     ------------------------------------------------------------*/
-    var aximo_t_slider = new Swiper(".aximo-testimonial-slider", {
+    var buildcode_t_slider = new Swiper(".buildcode-testimonial-slider", {
       slidesPerView: 1,
       pagination: {
         el: ".swiper-pagination",
@@ -246,16 +246,16 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
     });
 
     /*--------------------------------------------------------------
-    AXIMO TESTIMONIAL SLIDER TWO JS INIT
+    buildcode TESTIMONIAL SLIDER TWO JS INIT
     ------------------------------------------------------------*/
-    var aximo_t_slider2 = new Swiper(".aximo-testimonial-slider2", {
+    var buildcode_t_slider2 = new Swiper(".buildcode-testimonial-slider2", {
       slidesPerView: 1
     });
 
     /*--------------------------------------------------------------
-    AXIMO MAGNIFIC POPUP JS INIT
+    buildcode MAGNIFIC POPUP JS INIT
     ------------------------------------------------------------*/
-    var aximo_iconbox_slider = new Swiper(".aximo-iconbox-slider", {
+    var buildcode_iconbox_slider = new Swiper(".buildcode-iconbox-slider", {
       loop: true,
       spaceBetween: 30,
       grabCursor: true,
@@ -280,7 +280,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
     });
 
     /*--------------------------------------------------------------
-    AXIMO MAGNIFIC POPUP JS INIT
+    buildcode MAGNIFIC POPUP JS INIT
     ------------------------------------------------------------*/
     var popup_youtube = $('.video-init');
     if (popup_youtube.is_exist()) {
@@ -291,15 +291,15 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
     }
 
     /*--------------------------------------------------------------
-    AXIMO IMAGE SWIPE HOVER JS INIT
+    buildcode IMAGE SWIPE HOVER JS INIT
     ------------------------------------------------------------*/
 
-    gsap.set('.aximo-service-increase-row img.swipeimage', {
+    gsap.set('.buildcode-service-increase-row img.swipeimage', {
       yPercent: -50,
       xPercent: -50
     });
     var activeImage;
-    gsap.utils.toArray(".aximo-service-increase-row").forEach(function (el) {
+    gsap.utils.toArray(".buildcode-service-increase-row").forEach(function (el) {
       var image = el.querySelector('img.swipeimage'),
         setX,
         setY,
@@ -345,7 +345,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
     });
 
     /*--------------------------------------------------------------
-    AXIMO PRICING TABLE JS INIT
+    buildcode PRICING TABLE JS INIT
     ------------------------------------------------------------*/
     // Table BTN Trigger
     $("#l5-pricing-btn .toggle-btn").on("click", function (e) {
@@ -374,7 +374,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
   $(window).on("load", function () {}); // End window LODE
 
   /*--------------------------------------------------------------
-  AXIMO MAP JS
+  buildcode MAP JS
   ------------------------------------------------------------*/
   var google_map = $('#map');
   if (google_map.is_exist()) {
@@ -505,7 +505,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
     google.maps.event.addDomListener(window, 'load', init);
   }
 
-  //AXIMO wow js
+  //buildcode wow js
   var wow = new WOW({
     mobile: false,
     // default

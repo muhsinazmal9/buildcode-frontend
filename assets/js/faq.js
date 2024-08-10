@@ -2,7 +2,7 @@ var Accordion = function(el, multiple) {
   this.el = el || {};
   this.multiple = multiple || false;
 
-  var links = this.el.find('.aximo-accordion-header');
+  var links = this.el.find('.buildcode-accordion-header');
   links.on('click', {
       el: this.el,
       multiple: this.multiple
@@ -18,7 +18,7 @@ Accordion.prototype.dropdown = function(e) {
   $this.parent().toggleClass('open');
 
   if (!e.data.multiple) {
-      $el.find('.aximo-accordion-body').not($next).slideUp().parent().removeClass('open');
+      $el.find('.buildcode-accordion-body').not($next).slideUp().parent().removeClass('open');
   };
 }
-var accordion = new Accordion($('.aximo-accordion-wrap'), false);
+var accordion = new Accordion($('.buildcode-accordion-wrap'), false);
